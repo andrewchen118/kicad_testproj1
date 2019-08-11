@@ -1,0 +1,12 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J1";"USB_Micro-B_Amphenol_10103594-0001LF_Horizontal";1;"USB_B_Micro";;;
+2;"D4,D3,D2,D1";"D_SOD-123";4;"D_Small";;;
+3;"F2";"Fuse_1206_3216Metric";1;"500mA";;;
+4;"Y1";"Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering";1;"16MHz";;;
+5;"U1";"TQFP-32_7x7mm_P0.8mm";1;"ATmega32U2-AU";;;
+6;"SW1";"SKQG-1155865";1;"SW_Push";;;
+7;"R3";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"10k";;;
+8;"R2,R1";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"22";;;
+9;"MX4,MX3,MX2,MX1";"MXOnly-1U";4;"MX-NoLED";;;
+10;"C3";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"1uF";;;
+11;"C2,C1";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"22pF";;;

@@ -15,32 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Polyfuse_Small F1
-U 1 1 5D4D98D0
-P 4100 5250
-F 0 "F1" V 3895 5250 50  0000 C CNN
-F 1 "500mA" V 3986 5250 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 4150 5050 50  0001 L CNN
-F 3 "~" H 4100 5250 50  0001 C CNN
-	1    4100 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0111
-U 1 1 5D4DA718
-P 3850 5250
-F 0 "#PWR0111" H 3850 5100 50  0001 C CNN
-F 1 "VCC" H 3867 5423 50  0000 C CNN
-F 2 "" H 3850 5250 50  0001 C CNN
-F 3 "" H 3850 5250 50  0001 C CNN
-	1    3850 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 5250 4350 5250
-Wire Wire Line
-	3850 5250 4000 5250
-$Comp
 L TestProj-rescue:MX-NoLED-MX_Alps_Hybrid MX1
 U 1 1 5D524996
 P 6700 3000
@@ -156,7 +130,6 @@ Text GLabel 7500 2450 1    50   Input ~ 0
 COL1
 Connection ~ 6550 4000
 Connection ~ 6550 3350
-Connection ~ 3850 5250
 Text GLabel 6100 4000 0    50   Input ~ 0
 ROW1
 Text GLabel 6100 3350 0    50   Input ~ 0
@@ -165,36 +138,6 @@ Wire Wire Line
 	6550 4000 6100 4000
 Wire Wire Line
 	6550 3350 6100 3350
-Wire Wire Line
-	3600 5650 3650 5650
-$Comp
-L power:GND #PWR0112
-U 1 1 5D4E24B4
-P 3650 5650
-F 0 "#PWR0112" H 3650 5400 50  0001 C CNN
-F 1 "GND" H 3655 5477 50  0000 C CNN
-F 2 "" H 3650 5650 50  0001 C CNN
-F 3 "" H 3650 5650 50  0001 C CNN
-	1    3650 5650
-	1    0    0    -1  
-$EndComp
-Text GLabel 3600 5450 2    50   Input ~ 0
-D+
-Text GLabel 3600 5350 2    50   Input ~ 0
-D-
-Wire Wire Line
-	3600 5250 3850 5250
-$Comp
-L TestProj-rescue:Molex-0548190589-random-keyboard-parts USB1
-U 1 1 5D4D5338
-P 3300 5450
-F 0 "USB1" V 3837 5417 60  0000 C CNN
-F 1 "Molex-0548190589" V 3731 5417 60  0000 C CNN
-F 2 "random-keyboard-parts:Molex-0548190589" H 3300 5450 60  0001 C CNN
-F 3 "" H 3300 5450 60  0001 C CNN
-	1    3300 5450
-	0    -1   -1   0   
-$EndComp
 $Comp
 L MCU_Microchip_ATmega:ATmega32U2-AU U1
 U 1 1 5D52E245
@@ -433,4 +376,78 @@ Text GLabel 2250 2450 0    50   Input ~ 0
 D-
 Text GLabel 2250 2350 0    50   Input ~ 0
 D+
+Text GLabel 4250 3750 2    50   Input ~ 0
+COL0
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5D50024F
+P 5300 5400
+F 0 "J1" H 5357 5867 50  0000 C CNN
+F 1 "USB_B_Micro" H 5357 5776 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 5450 5350 50  0001 C CNN
+F 3 "~" H 5450 5350 50  0001 C CNN
+	1    5300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 5D506659
+P 6100 5200
+F 0 "F2" V 5895 5200 50  0000 C CNN
+F 1 "500mA" V 5986 5200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6150 5000 50  0001 L CNN
+F 3 "~" H 6100 5200 50  0001 C CNN
+	1    6100 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5D50665F
+P 5850 5200
+F 0 "#PWR0107" H 5850 5050 50  0001 C CNN
+F 1 "VCC" H 5867 5373 50  0000 C CNN
+F 2 "" H 5850 5200 50  0001 C CNN
+F 3 "" H 5850 5200 50  0001 C CNN
+	1    5850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5200 6350 5200
+Wire Wire Line
+	5850 5200 6000 5200
+Connection ~ 5850 5200
+Wire Wire Line
+	5600 5200 5850 5200
+Text GLabel 5600 5500 2    50   Input ~ 0
+D-
+Text GLabel 5600 5400 2    50   Input ~ 0
+D+
+$Comp
+L power:GND #PWR0108
+U 1 1 5D50758A
+P 5300 5800
+F 0 "#PWR0108" H 5300 5550 50  0001 C CNN
+F 1 "GND" H 5305 5627 50  0000 C CNN
+F 2 "" H 5300 5800 50  0001 C CNN
+F 3 "" H 5300 5800 50  0001 C CNN
+	1    5300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5D51C4E0
+P 6350 5200
+F 0 "#PWR0109" H 6350 5050 50  0001 C CNN
+F 1 "+5V" H 6365 5373 50  0000 C CNN
+F 2 "" H 6350 5200 50  0001 C CNN
+F 3 "" H 6350 5200 50  0001 C CNN
+	1    6350 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3850 2    50   Input ~ 0
+COL1
+Text GLabel 4250 3950 2    50   Input ~ 0
+ROW0
+Text GLabel 4250 1750 2    50   Input ~ 0
+ROW1
 $EndSCHEMATC
